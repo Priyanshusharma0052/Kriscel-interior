@@ -21,7 +21,7 @@ function MagneticButton({ className = "", children, ...props }) {
       ref={ref}
       onMouseMove={handleMove}
       onMouseLeave={reset}
-      className={`transition-transform duration-300 ${className}`}
+      className={`relative overflow-hidden transition-transform duration-300 before:pointer-events-none before:absolute before:inset-0 before:-translate-x-[120%] before:bg-[linear-gradient(110deg,transparent_20%,rgba(255,255,255,0.34)_50%,transparent_78%)] before:transition-transform before:duration-700 hover:before:translate-x-[120%] ${className}`}
       {...props}
     >
       {children}

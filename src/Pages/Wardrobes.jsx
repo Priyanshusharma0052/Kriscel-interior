@@ -29,8 +29,8 @@ function Wardrobes() {
 
         </p>
         <img
-  src="https://images.unsplash.com/photo-1494526585095-c41746248156?q=80&w=1600"
-  className="mt-12 rounded-[40px] shadow-2xl w-full h-[600px] object-cover"
+  src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?q=80&w=1600"
+  className="mt-12 rounded-[28px] md:rounded-[40px] shadow-2xl w-full h-[320px] sm:h-[440px] md:h-[600px] object-cover"
 />
 
       </section>

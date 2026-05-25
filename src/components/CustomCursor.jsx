@@ -11,7 +11,7 @@ function CustomCursor() {
 
   return (
     <div
-      className="pointer-events-none fixed z-[60] hidden md:block"
+      className="pointer-events-none fixed z-[60] hidden lg:block"
       style={{ transform: `translate(${pos.x - 10}px, ${pos.y - 10}px)` }}
     >
       <div className="h-5 w-5 rounded-full bg-primary/30 border border-primary"></div>

@@ -40,7 +40,7 @@ function ProjectDetail() {
             <h1 className="title mt-4">{project.title}</h1>
             <p className="mt-8 text-lg text-gray-600 leading-8">{project.description}</p>
 
-            <div className="mt-8 grid grid-cols-3 gap-4">
+            <div className="mt-8 grid gap-4 sm:grid-cols-3">
               {project.facts.map((f) => (
                 <div key={f} className="bg-white p-4 rounded-2xl shadow-soft text-center">{f}</div>
               ))}

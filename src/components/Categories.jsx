@@ -1,12 +1,12 @@
 const items = [
   {
     title:"Living Room",
-    image:"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200"
+    image:"https://images.unsplash.com/photo-1616593969747-4797dc75033e?q=80&w=1200"
   },
 
   {
     title:"Bedroom",
-    image:"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200"
+    image:"https://images.unsplash.com/photo-1616593969747-4797dc75033e?q=80&w=1200"
   },
 
   {
@@ -16,7 +16,7 @@ const items = [
 
   {
     title:"Wardrobes",
-    image:"https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200"
+    image:"https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?q=80&w=1200"
   },
 ];
 
@@ -24,16 +24,16 @@ function Categories() {
   return (
     <section className="section">
 
-      <h2 className="title mb-14">
+      <h2 className="title mb-10 md:mb-14">
         Explore Categories
       </h2>
 
-      <div className="grid md:grid-cols-4 gap-8">
+      <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-4 md:gap-8">
 
         {items.map((item,index)=>(
           <div
             key={index}
-            className="group relative overflow-hidden rounded-3xl h-[420px]"
+            className="group relative h-[260px] overflow-hidden rounded-2xl sm:h-[320px] sm:rounded-3xl md:h-[420px]"
           >
 
             <img
@@ -43,7 +43,7 @@ function Categories() {
 
             <div className="absolute inset-0 bg-black/30"></div>
 
-            <h3 className="absolute bottom-8 left-8 text-white text-3xl font-bold"data-aos="fade-up"
+            <h3 className="absolute bottom-5 left-5 text-2xl font-bold text-white sm:bottom-8 sm:left-8 sm:text-3xl"data-aos="fade-up"
             >
               {item.title}
             </h3>

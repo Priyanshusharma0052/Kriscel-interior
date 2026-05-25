@@ -29,8 +29,8 @@ function Kitchen() {
 
         </p>
         <img
-  src="https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=1600"
-  className="mt-12 rounded-[40px] shadow-2xl w-full h-[600px] object-cover"
+  src="https://images.unsplash.com/photo-1556912173-3bb406ef7e77?q=80&w=1600"
+  className="mt-12 rounded-[28px] md:rounded-[40px] shadow-2xl w-full h-[320px] sm:h-[440px] md:h-[600px] object-cover"
 />
 
       </section>

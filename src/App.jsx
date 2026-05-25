@@ -20,6 +20,9 @@ import Office from "./Pages/Office";
 import Gallery from "./Pages/Gallery";
 import Contact from "./Pages/Contact";
 import StylePage from "./Pages/StylePage";
+import KitchenOptionPage from "./Pages/KitchenOptionPage";
+import WardrobeOptionPage from "./Pages/WardrobeOptionPage";
+import CityPage from "./Pages/CityPage";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -33,13 +36,16 @@ function AnimatedRoutes() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/projects/:slug" element={<ProjectDetail />} />
         <Route path="/kitchen" element={<Kitchen />} />
+        <Route path="/kitchens/:slug" element={<KitchenOptionPage />} />
         <Route path="/wardrobes" element={<Wardrobes />} />
+        <Route path="/wardrobes/:slug" element={<WardrobeOptionPage />} />
         <Route path="/living-room" element={<LivingRoom />} />
         <Route path="/bedroom" element={<Bedroom />} />
         <Route path="/office" element={<Office />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/styles/:slug" element={<StylePage />} />
+        <Route path="/cities/:slug" element={<CityPage />} />
         <Route path="*" element={<Home />} />
       </Routes>
     </AnimatePresence>

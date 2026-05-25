@@ -1,11 +1,23 @@
+import { Link } from "react-router-dom";
 import { navLinks } from "../data/siteData";
+import { motion } from "framer-motion";
 
 function Footer() {
+  const goHomeTop = () => {
+    window.setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }, 100);
+  };
+
   return (
-    <footer className="bg-black text-white px-6 md:px-16 py-16">
-      <div className="grid md:grid-cols-4 gap-10">
+    <footer className="relative overflow-hidden bg-black px-6 py-16 text-white md:px-16">
+      <div className="pointer-events-none absolute -top-20 left-12 h-60 w-60 rounded-full bg-primary/12 blur-3xl"></div>
+      <div className="pointer-events-none absolute -bottom-28 right-6 h-72 w-72 rounded-full bg-white/10 blur-3xl"></div>
+      <div className="relative grid gap-10 md:grid-cols-4">
         <div>
-          <h3 className="text-3xl font-bold">Kriscel Interiors</h3>
+          <Link to="/" onClick={goHomeTop} className="inline-block text-3xl font-bold transition hover:text-primary">
+            Kriscel Interiors
+          </Link>
           <p className="mt-5 text-gray-400 leading-8">
             Premium modular interiors and furniture for modern homes.
           </p>
@@ -43,9 +55,15 @@ function Footer() {
         </div>
       </div>
 
-      <div className="mt-12 border-t border-white/10 pt-6 text-gray-500">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.7 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative mt-12 border-t border-white/10 pt-6 text-gray-500"
+      >
         © 2026 Kriscel Interiors. All rights reserved.
-      </div>
+      </motion.div>
     </footer>
   );
 }

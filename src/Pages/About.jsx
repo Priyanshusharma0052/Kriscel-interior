@@ -10,7 +10,7 @@ function About() {
       <Navbar />
       <section className="pt-32 section">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1600" className="rounded-[32px] shadow-soft" alt="About" />
+          <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1600" className="rounded-[32px] shadow-soft" alt="About" />
           <div>
             <h1 className="title">About Kriscel Interiors</h1>
             <p className="mt-8 text-lg leading-8 text-gray-600">

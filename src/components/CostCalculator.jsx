@@ -9,11 +9,11 @@ function CostCalculator() {
   return (
     <section className="section bg-black text-white">
 
-      <h2 className="title text-center mb-20">
+      <h2 className="title mb-10 text-center md:mb-20">
         Interior Cost Calculator
       </h2>
 
-      <div className="max-w-4xl mx-auto glass p-10 rounded-3xl">
+      <div className="glass mx-auto max-w-4xl rounded-2xl p-5 sm:p-8 md:rounded-3xl md:p-10">
 
         <input
           type="range"
@@ -24,13 +24,13 @@ function CostCalculator() {
           className="w-full"
         />
 
-        <div className="mt-10 text-center">
+        <div className="mt-8 text-center md:mt-10">
 
-          <h3 className="text-3xl">
+          <h3 className="text-xl sm:text-3xl">
             Area: {area} sq.ft
           </h3>
 
-          <h2 className="text-6xl font-bold mt-8 text-primary">
+          <h2 className="mt-6 text-4xl font-bold text-primary sm:text-6xl md:mt-8">
             ₹ {total}
           </h2>
 

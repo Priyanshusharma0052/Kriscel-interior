@@ -9,13 +9,14 @@ function ExperienceCenters() {
         {centers.map((c) => (
           <div key={c.city} className="bg-light rounded-[30px] overflow-hidden shadow-soft card-3d">
             <img
-              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200"
-              className="h-[260px] w-full object-cover"
+              src={c.image}
+              className="h-[220px] md:h-[260px] w-full object-cover"
               alt={c.city}
             />
             <div className="p-8">
               <h3 className="text-3xl font-bold">{c.city}</h3>
               <p className="mt-4 text-gray-600">{c.address}</p>
+              <p className="mt-3 text-sm font-medium uppercase tracking-[3px] text-primary">{c.hours}</p>
             </div>
           </div>
         ))}

@@ -11,9 +11,7 @@ import BeforeAfter from "../components/BeforeAfter";
 import Gallery from "../components/Gallery";
 import DesignStyles from "../components/DesignStyles";
 import Testimonials from "../components/Testimonials";
-import Awards from "../components/Awards";
 import InstagramSection from "../components/InstagramSection";
-import TechSection from "../components/TechSection";
 import ExperienceCenters from "../components/ExperienceCenters";
 import TeamSection from "../components/TeamSection";
 import BlogSection from "../components/BlogSection";
@@ -23,6 +21,30 @@ import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Seo from "../components/Seo";
 import PageTransition from "../components/PageTransition";
+import { motion } from "framer-motion";
+
+const reveal = {
+  hidden: { opacity: 0, y: 56, scale: 0.985 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.95, ease: [0.16, 1, 0.3, 1] },
+  },
+};
+
+function AnimatedSection({ children }) {
+  return (
+    <motion.div
+      variants={reveal}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+    >
+      {children}
+    </motion.div>
+  );
+}
 
 function Home() {
   return (
@@ -34,26 +56,24 @@ function Home() {
 
       <Navbar />
       <Hero />
-      <VideoShowcase />
-      <TrustedBrands />
-      <Stats />
-      <DesignProcess />
-      <InteriorPackages />
-      <HorizontalShowcase />
-      <WhyChoose />
-      <BeforeAfter />
-      <Gallery />
-      <DesignStyles />
-      <Testimonials />
-      <Awards />
-      <InstagramSection />
-      <TechSection />
-      <ExperienceCenters />
-      <TeamSection />
-      <BlogSection />
-      <FAQ />
-      <CTA />
-      <ContactForm />
+      <AnimatedSection><VideoShowcase /></AnimatedSection>
+      <AnimatedSection><TrustedBrands /></AnimatedSection>
+      <AnimatedSection><Stats /></AnimatedSection>
+      <AnimatedSection><DesignProcess /></AnimatedSection>
+      <AnimatedSection><InteriorPackages /></AnimatedSection>
+      <AnimatedSection><HorizontalShowcase /></AnimatedSection>
+      <AnimatedSection><WhyChoose /></AnimatedSection>
+      <AnimatedSection><BeforeAfter /></AnimatedSection>
+      <AnimatedSection><Gallery /></AnimatedSection>
+      <AnimatedSection><DesignStyles /></AnimatedSection>
+      <AnimatedSection><Testimonials /></AnimatedSection>
+      <AnimatedSection><InstagramSection /></AnimatedSection>
+      <AnimatedSection><ExperienceCenters /></AnimatedSection>
+      <AnimatedSection><TeamSection /></AnimatedSection>
+      <AnimatedSection><BlogSection /></AnimatedSection>
+      <AnimatedSection><FAQ /></AnimatedSection>
+      <AnimatedSection><CTA /></AnimatedSection>
+      <AnimatedSection><ContactForm /></AnimatedSection>
       <Footer />
     </PageTransition>
   );

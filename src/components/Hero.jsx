@@ -7,7 +7,8 @@ function Hero() {
     <section className="relative min-h-screen overflow-hidden bg-black hero-gradient flex items-center pt-24">
       <div className="absolute inset-0">
         <video autoPlay muted loop playsInline className="w-full h-full object-cover opacity-55">
-          <source src="https://cdn.coverr.co/videos/coverr-modern-living-room-1561308612492?download=1080p" type="video/mp4" />
+          <source src="https://cdn.coverr.co/videos/coverr-modern-living-room-1561308612492?download=1080p"
+            type="video/mp4" />
         </video>
       </div>
 

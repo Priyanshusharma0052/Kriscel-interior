@@ -1,4 +1,3 @@
-import Tilt from "react-parallax-tilt";
 const items = [
   {
     title:"Living Room",

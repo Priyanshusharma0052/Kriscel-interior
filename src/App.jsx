@@ -7,19 +7,19 @@ import Loader from "./components/Loader";
 import CustomCursor from "./components/CustomCursor";
 import FloatingCTA from "./components/FloatingCTA";
 
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail";
-import Kitchen from "./pages/Kitchen";
-import Wardrobes from "./pages/Wardrobes";
-import LivingRoom from "./pages/LivingRoom";
-import Bedroom from "./pages/Bedroom";
-import Office from "./pages/Office";
-import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
-import StylePage from "./pages/StylePage";
+import Home from "./Pages/Home";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
+import Projects from "./Pages/Projects";
+import ProjectDetail from "./Pages/ProjectDetail";
+import Kitchen from "./Pages/Kitchen";
+import Wardrobes from "./Pages/Wardrobes";
+import LivingRoom from "./Pages/LivingRoom";
+import Bedroom from "./Pages/Bedroom";
+import Office from "./Pages/Office";
+import Gallery from "./Pages/Gallery";
+import Contact from "./Pages/Contact";
+import StylePage from "./Pages/StylePage";
 
 function AnimatedRoutes() {
   const location = useLocation();
@@ -40,6 +40,7 @@ function AnimatedRoutes() {
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/styles/:slug" element={<StylePage />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </AnimatePresence>
   );

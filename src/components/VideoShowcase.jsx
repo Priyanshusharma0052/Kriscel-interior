@@ -1,3 +1,5 @@
+import walkthroughVideo from "../videos/12684285_1920_1080_60fps.mp4";
+
 function VideoShowcase() {
   return (
     <section className="section bg-black text-white">
@@ -12,7 +14,7 @@ function VideoShowcase() {
 
         <div className="rounded-[36px] overflow-hidden shadow-soft">
           <video autoPlay muted loop playsInline className="w-full h-[420px] object-cover">
-            <source src="https://cdn.coverr.co/videos/coverr-wooden-home-interior-1561501033390?download=1080p" type="video/mp4" />
+            <source src={walkthroughVideo} type="video/mp4" />
           </video>
         </div>
       </div>

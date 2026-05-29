@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function BlogSection() {
   return (
-    <section className="section">
+    <section className="section bg-[#faf4ea]">
       <h2 className="title mb-12">Interior Design Magazine</h2>
 
       <div className="grid md:grid-cols-3 gap-8">

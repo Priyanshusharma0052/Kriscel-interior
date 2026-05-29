@@ -14,7 +14,7 @@ function VideoShowcase() {
   }, []);
 
   return (
-    <section className="section bg-[#F8F5F2] text-black">
+    <section className="section bg-[#f6efe6] text-dark">
       <div className="grid lg:grid-cols-2 gap-10 items-center">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
@@ -24,8 +24,8 @@ function VideoShowcase() {
         >
           <p className="uppercase tracking-[4px] text-primary text-sm font-semibold">Walkthrough</p>
           <h2 className="title mt-4">See the space before you step in.</h2>
-          <p className="mt-6 text-black/65 leading-8">
-            Add cinematic walkthrough videos, 3D design previews, and transformation clips for stronger trust and higher conversions.
+          <p className="mt-6 text-dark/65 leading-8">
+            Cinematic walkthroughs, 3D design previews, and transformation clips help clients feel the room, materials, and lighting before execution begins.
           </p>
         </motion.div>
 
@@ -34,7 +34,7 @@ function VideoShowcase() {
           whileInView={{ opacity: 1, scale: 1, y: 0 }}
           viewport={{ once: true, amount: 0.22 }}
           transition={{ duration: 1.05, ease: [0.16, 1, 0.3, 1] }}
-          className="premium-card luxury-glow float-slow rounded-[36px] overflow-hidden shadow-soft ring-1 ring-black/5"
+          className="premium-card luxury-glow float-slow overflow-hidden rounded-[28px] shadow-soft ring-1 ring-primary/20 md:rounded-[36px]"
         >
           <video
             ref={videoRef}

@@ -8,7 +8,7 @@ import "swiper/css/effect-fade";
 
 function Testimonials() {
   return (
-    <section className="section bg-white">
+    <section className="section bg-[#f6f0ea]">
       <motion.h2
         initial={{ opacity: 0, y: 24 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 function DesignProcess() {
   return (
-    <section className="section">
+    <section className="section bg-[#f1e8dc]">
       <h2 className="title mb-16 text-center">Our Design Process</h2>
 
       <div className="grid md:grid-cols-5 gap-6">

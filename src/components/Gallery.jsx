@@ -39,7 +39,7 @@ function Gallery() {
   }, [activeIndex]);
 
   return (
-    <section className="section">
+    <section className="section bg-[#f8f1e7]">
 
       <h2 className="title mb-14">
         Project Gallery

@@ -27,7 +27,7 @@ function WhyChoose() {
   ];
 
   return (
-    <section className="section">
+    <section className="section bg-[#f5efe6]">
       <div className="grid lg:grid-cols-2 gap-12 items-center">
         <img
           src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?q=80&w=1600"

@@ -2,7 +2,7 @@ import { packages } from "../data/siteData";
 
 function InteriorPackages() {
   return (
-    <section className="section bg-[#F8F5F2] text-black">
+    <section className="section bg-[#f7f0e8] text-black">
       <h2 className="title mb-10 text-center md:mb-16">Interior Packages</h2>
 
       <div className="grid gap-5 md:grid-cols-3 md:gap-8">

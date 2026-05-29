@@ -137,7 +137,7 @@ function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
       className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-        scrolled ? "bg-white/95 py-2 shadow-lg backdrop-blur-xl sm:py-3" : "bg-white py-3 sm:py-5"
+        scrolled ? "bg-white/90 py-2 shadow-lg backdrop-blur-xl sm:py-3" : "bg-white/70 py-3 backdrop-blur sm:py-5"
       }`}
     >
       <div className="flex items-center justify-between px-4 sm:px-6 md:px-16">

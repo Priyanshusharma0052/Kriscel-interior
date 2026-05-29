@@ -4,15 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#C8A97E",
-        dark: "#111111",
-        light: "#F8F5F2",
+        primary: "#B9905A",
+        dark: "#140F14",
+        light: "#F7F2EA",
       },
       boxShadow: {
-        soft: "0 20px 60px rgba(0,0,0,0.12)",
+        soft: "0 22px 70px rgba(47, 39, 32, 0.13)",
       },
     },
   },
   plugins: [],
 };
-

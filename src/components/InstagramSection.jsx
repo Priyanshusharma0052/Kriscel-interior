@@ -22,7 +22,7 @@ function InstagramSection() {
   ];
 
   return (
-    <section className="section">
+    <section className="section bg-[#edf1ec]">
       <h2 className="title mb-12 text-center">Follow Our Instagram</h2>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-5">

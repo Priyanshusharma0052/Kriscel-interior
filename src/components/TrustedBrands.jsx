@@ -5,7 +5,7 @@ function TrustedBrands() {
   const marqueeBrands = [...trustedBrands, ...trustedBrands];
 
   return (
-    <section className="section bg-white">
+    <section className="section bg-[#edf2eb] backdrop-blur">
       <motion.p
         initial={{ opacity: 0, y: 18 }}
         whileInView={{ opacity: 1, y: 0 }}

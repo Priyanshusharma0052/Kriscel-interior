@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 function DesignStyles() {
   return (
-    <section id="design-styles" className="section scroll-mt-28">
+    <section id="design-styles" className="section scroll-mt-28 bg-[#eef2eb]">
       <h2 className="title mb-12">Explore Design Styles</h2>
 
       <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-8">

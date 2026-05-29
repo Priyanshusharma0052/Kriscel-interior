@@ -6,7 +6,7 @@ import "swiper/css";
 
 function HorizontalShowcase() {
   return (
-    <section className="section overflow-hidden bg-white">
+    <section className="section overflow-hidden bg-[#eef2eb]">
       <h2 className="title mb-10">Scrolling Project Story</h2>
 
       <Swiper

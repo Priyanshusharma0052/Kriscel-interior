@@ -21,7 +21,7 @@ function ContactForm() {
   };
 
   return (
-    <section id="consultation" className="section scroll-mt-28 bg-white">
+    <section id="consultation" className="section scroll-mt-28 bg-[#f7f0e8]">
       <div className="mx-auto grid max-w-7xl gap-12 lg:grid-cols-[0.8fr_1.25fr] lg:items-start">
         <motion.div
           initial={{ opacity: 0, y: 28 }}

@@ -2,7 +2,7 @@ import { centers } from "../data/siteData";
 
 function ExperienceCenters() {
   return (
-    <section className="section bg-white">
+    <section className="section bg-[#f3eee5]">
       <h2 className="title text-center mb-14">Experience Centers</h2>
 
       <div className="grid md:grid-cols-3 gap-8">

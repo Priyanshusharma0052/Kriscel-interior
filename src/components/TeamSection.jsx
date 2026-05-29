@@ -2,7 +2,7 @@ import { team } from "../data/siteData";
 
 function TeamSection() {
   return (
-    <section className="section">
+    <section className="section bg-[#eef1ec]">
       <h2 className="title mb-12">Meet The Team</h2>
 
       <div className="grid md:grid-cols-3 gap-8">

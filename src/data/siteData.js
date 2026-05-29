@@ -221,16 +221,46 @@ export const cityOptions = [
 ];
 
 export const trustedBrands = [
-  "Livspace",
-  "IKEA",
-  "Urban Ladder",
-  "WoodenStreet",
-  "Home Centre",
-  "Hettich",
-  "Hafele",
-  "Asian Paints",
-  "Kajaria",
-  "Jaquar",
+  {
+    name: "Livspace",
+    logo: "/trusted-brands/livspace.svg",
+  },
+  {
+    name: "IKEA",
+    logo: "/trusted-brands/ikea.svg",
+  },
+  {
+    name: "Urban Ladder",
+    logo: "/trusted-brands/urban-ladder.svg",
+  },
+  {
+    name: "WoodenStreet",
+    logo: "/trusted-brands/woodenstreet.svg",
+  },
+  {
+    name: "Home Centre",
+    logo: "/trusted-brands/home-centre.png",
+  },
+  {
+    name: "Hettich",
+    logo: "/trusted-brands/hettich.svg",
+  },
+  {
+    name: "Hafele",
+    logo: "/trusted-brands/hafele.png",
+  },
+  {
+    name: "Asian Paints",
+    logo: "/trusted-brands/asian-paints.webp",
+  },
+  {
+    name: "Kajaria",
+    logo: "/trusted-brands/kajaria.png",
+  },
+  {
+    name: "Jaquar",
+    logo: "/trusted-brands/jaquar.svg",
+  },
 ];
 
 export const stats = [

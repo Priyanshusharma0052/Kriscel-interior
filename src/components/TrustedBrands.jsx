@@ -16,11 +16,16 @@ function TrustedBrands() {
         Trusted By Premium Brands
       </motion.p>
 
-      <div className="brand-marquee mt-14 opacity-70 float-slower">
+      <div className="brand-marquee mt-14 opacity-90 float-slower">
         <div className="brand-marquee-track">
           {marqueeBrands.map((brand, index) => (
-            <div key={`${brand}-${index}`} className="brand-marquee-item text-2xl font-bold">
-              {brand}
+            <div key={`${brand.name}-${index}`} className="brand-marquee-item">
+              <img
+                src={brand.logo}
+                alt={brand.name}
+                className="mx-auto h-10 w-auto max-w-[180px] object-contain transition duration-300 sm:h-12"
+                loading="lazy"
+              />
             </div>
           ))}
         </div>
